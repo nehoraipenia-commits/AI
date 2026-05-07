@@ -14,3 +14,9 @@ Assurez-vous d'avoir Python installé.
    python3 AI.py
 
 ### Comment utiliser l'IA
+
+L'IA peut repondre a des questions simples, 
+si vous souhaitez lui ajouter des questions 
+et reponses vous pouvez modifier les fichiers :
+- memoire.py
+- convertisseur.py
