@@ -12,3 +12,5 @@ Assurez-vous d'avoir Python installé.
    git clone https://github.com/nehoraipenia-commits/AI.git
    cd AI
    python3 AI.py
+
+### Comment utiliser l'IA
