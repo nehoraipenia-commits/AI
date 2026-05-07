@@ -11,4 +11,4 @@ Assurez-vous d'avoir Python installé.
    ```bash
    git clone https://github.com/nehoraipenia-commits/AI.git
    cd AI
-   python AI.py
+   python3 AI.py
