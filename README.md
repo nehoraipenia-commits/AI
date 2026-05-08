@@ -5,6 +5,8 @@ Voici les étapes pour installer et lancer l'assistant sur votre machine.
 ### 📋 Prérequis
 Assurez-vous d'avoir Python installé.
 
+Intaller python :
+
 ### 📦 Installation
 
 1. **Cloner le projet**
