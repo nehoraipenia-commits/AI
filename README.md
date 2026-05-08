@@ -27,7 +27,7 @@ Ce chatbot a été créé sans libs donc vous n'avez pas des bibliotheques a ins
 
 utiliser ce lien pour voir notre site.
 
-https://chatbot-ai-installation.netlify.app/
+https://nexeo-ai.netlify.app/
 
 Vous verrez les explications pour le telecharger
 
