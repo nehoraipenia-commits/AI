@@ -21,4 +21,8 @@ et reponses vous pouvez modifier les fichiers :
 - memoire.py
 - convertisseur.py
 
+### Site web
+
+utiliser ce lien pour voir notre site.
+https://chatbot-ai-installation.netlify.app/
 Un site web pout plus d'explications sera bientot créé.
