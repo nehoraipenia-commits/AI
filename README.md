@@ -21,8 +21,13 @@ et reponses vous pouvez modifier les fichiers :
 - memoire.py
 - convertisseur.py
 
+Ce chatbot a été créé sans libs donc vous n'avez pas a installer des bibliothques
+
 ### Site web
 
 utiliser ce lien pour voir notre site.
+
 https://chatbot-ai-installation.netlify.app/
-Un site web pout plus d'explications sera bientot créé.
+
+Vous verrez les explications pour le telecharger
+
