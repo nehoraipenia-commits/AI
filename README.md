@@ -21,7 +21,7 @@ et reponses vous pouvez modifier les fichiers :
 - memoire.py
 - convertisseur.py
 
-Ce chatbot a été créé sans libs donc vous n'avez pas a installer des bibliothques
+Ce chatbot a été créé sans libs donc vous n'avez pas des bibliotheques a installer
 
 ### Site web
 
