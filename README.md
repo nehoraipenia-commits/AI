@@ -1,4 +1,4 @@
-# AI
+# IA
 
 Here are the steps to install and launch the assistant on your machine.
 
@@ -8,27 +8,25 @@ Make sure you have Python installed.
 ### 📦 Installation
 
 1. **Clone the project**
-  ```bash
-    git clone https://github.com/nehoraipenia-commits/AI.git
-    cd AI
-    python3 AI.py
+   ```bash
+   git clone https://github.com/nehoraipenia-commits/AI.git
+   cd AI
+   python3 AI.py
 
-### How to use the AI
+### Comment utiliser l'IA
 
-The AI ​​can answer simple questions.
+L'IA peut repondre a des questions simples, 
+si vous souhaitez lui ajouter des questions 
+et reponses vous pouvez modifier les fichiers :
+- memoire.py
+- convertisseur.py
 
-If you want to add more questions and answers, you can modify the following files:
+Ce chatbot a été créé sans libs donc vous n'avez pas des bibliotheques a installer
 
-- memory.py
+### Site web
 
-- converter.py
-
-This chatbot was created without libraries, so you don't need to install any.
-
-### Website
-
-Use this link to see our website.
+utiliser ce lien pour voir notre site.
 
 https://nexeo-ai.netlify.app/
 
-You will find instructions on how to download it.
+Vous verrez les explications pour le telecharger
