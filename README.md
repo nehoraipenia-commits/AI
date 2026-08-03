@@ -55,6 +55,7 @@ An advanced, lightweight hybrid generative intelligence system built natively wi
                                 +---------------------------+
 
 ```
+
 ## Prerequisites
 
 - Before installing, make sure you have the following software installed on your machine:
