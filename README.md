@@ -76,7 +76,7 @@ cd AI
 ```
 
 
-Create and activate a virtual environment (Recommended)
+### Create and activate a virtual environment (Recommended)
 
 # On macOS/Linux
 python3 -m venv venv
@@ -147,6 +147,7 @@ Safely terminate processes and save current weights.
 
 Repository Structure
 
+```
 AI/
 ├── AI.py                            # Main system pipeline controller & interactive CLI
 ├── AdvancedPhraseReformulator.py    # POS-aware grammatical reformulation engine
@@ -157,6 +158,9 @@ AI/
 ├── big_book.txt                     # Primary system corpus & knowledge store
 ├── ollama_responses.txt             # Cooperative LLM expansion logging store
 └── checkpoints/                     # Model weight serialization directory
+```
+
+
 
 
 License
