@@ -8,10 +8,22 @@ Make sure you have Python installed.
 ### 📦 Installation
 
 1. **Clone the project**
-```bash
-git clone https://github.com/nehoraipenia-commits/AI.git
-cd AI
-python3 AI.py
+  ```bash
+    git clone https://github.com/nehoraipenia-commits/AI.git
+    cd AI
+    python3 AI.py
+
+### How to use the AI
+
+The AI ​​can answer simple questions.
+
+If you want to add more questions and answers, you can modify the following files:
+
+- memory.py
+
+- converter.py
+
+This chatbot was created without libraries, so you don't need to install any.
 
 ### Website
 
