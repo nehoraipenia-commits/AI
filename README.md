@@ -55,22 +55,23 @@ An advanced, lightweight hybrid generative intelligence system built natively wi
                                 +---------------------------+
 
 ```
-Prerequisites
+## Prerequisites
 
-Before installing, make sure you have the following software installed on your machine:
+- Before installing, make sure you have the following software installed on your machine:
 
-Python: Version 3.8 or higher
+- Python: Version 3.8 or higher
 
-PyTorch: Version 1.12.0 or higher (CUDA/MPS support optional but recommended)
+- PyTorch: Version 1.12.0 or higher (CUDA/MPS support optional but recommended)
 
-Ollama (Optional): Required only if you intend to run cooperative LLM fine-tuning locally.
+- Ollama (Optional): Required only if you intend to run cooperative LLM fine-tuning locally.
 
-Installation & Setup
+- Installation & Setup
 
-Clone the repository
+###Clone the repository
 
-git clone https://github.com/nehoraipenia-commits/AI.git
+```git clone https://github.com/nehoraipenia-commits/AI.git
 cd AI
+```
 
 
 Create and activate a virtual environment (Recommended)
