@@ -44,10 +44,10 @@ An advanced, lightweight hybrid generative intelligence system built natively wi
                                  +--------------+--------------+
                                                 |
                                                 v
-  +----------------------------+   +-----------+-----------+   +----------------------------+
-  | French Reconstruction Module|<--| Smart Sampler Engine  |-->| Ollama Local LLM           |
-  | (FSR Grammar Correction)    |   | (Top-K / Nucleus Sampling)| (Cooperative Warmup Loops) |
-  +----------------------------+   +-----------+-----------+   +----------------------------+
+  +----------------------------+    +-----------+-------------+   +----------------------------+
+  | French Reconstruction Module|<--| Smart Sampler Engine    |-->| Ollama Local LLM           |
+  | (FSR Grammar Correction)    |   | (Top-K/Nucleus Sampling)|   | (Cooperative Warmup Loops) |
+  +----------------------------+    +-----------+-------------+   +----------------------------+
                                                 |
                                                 v
                                   +-------------+-------------+
