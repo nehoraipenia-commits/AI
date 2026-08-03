@@ -98,7 +98,7 @@ pip install torch numpy scikit-learn requests
 ### Launch the Assistant CLI
 
 ```
-python3 AI.py
+python3 ai_pytorch.py
 ```
 
 Interactive CLI Commands
@@ -109,43 +109,73 @@ Command
 
 Description
 
+```
 /status
+```
+
 
 View hardware specs, device allocation, active BPE vocabulary size, and memory base file status.
 
+```
 /train <epochs>
+```
+
 
 Re-optimize Transformer weights directly on your local codebase and documentation.
 
+```
 /model <name>
+```
+
 
 Change the active local Ollama model identifier (e.g., /model gemma2:2b or /model llama3).
 
+```
 /gemma <count>
+```
+
 
 Run cooperative generation loops with local Ollama to expand local knowledge base and retrain model.
 
+```
 /train_fsr <ep>
+```
+
 
 Train the French Sentence Reconstruction Transformer module on local texts.
 
+```
 /reconstruct <text>
+```
+
 
 Correct corrupted French phrasing, typos, or contractions using the FSR model.
 
+```
 /save
+```
+
 
 Manually export current brain checkpoints and weights to disk (checkpoints/).
 
+```
 /load
+```
+
 
 Reload saved system states and tokenizer vocabularies from checkpoint files.
 
+```
 /clear
+```
+
 
 Clear the terminal interface screen.
 
+```
 /exit
+```
+
 
 Safely terminate processes and save current weights.
 
