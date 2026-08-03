@@ -194,3 +194,4 @@ AI/
 └── checkpoints/                     # Model weight serialization directory
 ```
 
+For more informations : https://nexeo-ai.netlify.app/
