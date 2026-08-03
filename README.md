@@ -186,7 +186,7 @@ AI/
 ├── AI.py                            # Main system pipeline controller & interactive CLI
 ├── AdvancedPhraseReformulator.py    # POS-aware grammatical reformulation engine
 ├── ai_generation_helper.py          # Smart logits sampler, Markov engine & text optimizer
-├── FrenchContractionHandler.py     # French contraction rules & Seq2Seq reconstruction
+├── FrenchContractionHandler.py      # French contraction rules & Seq2Seq reconstruction
 ├── dynamic_user_memory.py           # Dynamic user fact extractor & rolling history manager
 ├── nlp_tokenization_suite.py        # Subword Byte-Pair Encoding (BPE) tokenizer suite
 ├── big_book.txt                     # Primary system corpus & knowledge store
