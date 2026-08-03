@@ -78,24 +78,28 @@ cd AI
 
 ### Create and activate a virtual environment (Recommended)
 
-# On macOS/Linux
+## On macOS/Linux
 python3 -m venv venv
 source venv/bin/activate
 
-# On Windows
+## On Windows
+
+```
 python -m venv venv
 venv\Scripts\activate
+```
 
+### Install required dependencies
 
-Install required dependencies
-
+```
 pip install torch numpy scikit-learn requests
+```
 
+### Launch the Assistant CLI
 
-Launch the Assistant CLI
-
+```
 python3 AI.py
-
+```
 
 Interactive CLI Commands
 
