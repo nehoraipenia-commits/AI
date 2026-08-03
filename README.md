@@ -21,38 +21,38 @@ An advanced, lightweight hybrid generative intelligence system built natively wi
 - System Architecture
 
 ```
-                                +---------------------------+
-                                |    User Input / Prompt    |
-                                +-------------+-------------+
-                                              |
-                                              v
- +----------------------------+   +-----------+-----------+   +----------------------------+
- | Dynamic User Memory Core   |-->| Semantic Memory (RAG) |<--| Indexed Directory Files    |
- | (Facts & History Context)  |   | (TF-IDF Vector Store) |   | (.py code & .txt docs)     |
- +----------------------------+   +-----------+-----------+   +----------------------------+
-                                              |
-                                              v
-                               +--------------+--------------+
-                               | Byte-Pair Encoding (BPE)    |
-                               | Tokenizer Pipeline          |
-                               +--------------+--------------+
-                                              |
-                                              v
-                               +--------------+--------------+
-                               | Custom Causal Transformer   |
-                               | (Multi-Head Self-Attention) |
-                               +--------------+--------------+
-                                              |
-                                              v
-+----------------------------+   +-----------+-----------+   +----------------------------+
-| French Reconstruction Module|<--| Smart Sampler Engine  |-->| Ollama Local LLM           |
-| (FSR Grammar Correction)    |   | (Top-K / Nucleus Sampling)| (Cooperative Warmup Loops) |
-+----------------------------+   +-----------+-----------+   +----------------------------+
-                                              |
-                                              v
-                                +-------------+-------------+
-                                |  Generated AI Response    |
-                                +---------------------------+
+                                  +---------------------------+
+                                  |    User Input / Prompt    |
+                                  +-------------+-------------+
+                                                |
+                                                v
+   +----------------------------+   +-----------+-----------+   +----------------------------+
+   | Dynamic User Memory Core   |-->| Semantic Memory (RAG) |<--| Indexed Directory Files    |
+   | (Facts & History Context)  |   | (TF-IDF Vector Store) |   | (.py code & .txt docs)     |
+   +----------------------------+   +-----------+-----------+   +----------------------------+
+                                                |
+                                                v
+                                 +--------------+--------------+
+                                 | Byte-Pair Encoding (BPE)    |
+                                 | Tokenizer Pipeline          |
+                                 +--------------+--------------+
+                                                |
+                                                v
+                                 +--------------+--------------+
+                                 | Custom Causal Transformer   |
+                                 | (Multi-Head Self-Attention) |
+                                 +--------------+--------------+
+                                                |
+                                                v
+  +----------------------------+   +-----------+-----------+   +----------------------------+
+  | French Reconstruction Module|<--| Smart Sampler Engine  |-->| Ollama Local LLM           |
+  | (FSR Grammar Correction)    |   | (Top-K / Nucleus Sampling)| (Cooperative Warmup Loops) |
+  +----------------------------+   +-----------+-----------+   +----------------------------+
+                                                |
+                                                v
+                                  +-------------+-------------+
+                                  |  Generated AI Response    |
+                                  +---------------------------+
 
 ```
 
