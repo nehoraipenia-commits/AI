@@ -68,9 +68,10 @@ An advanced, lightweight hybrid generative intelligence system built natively wi
 
 - Installation & Setup
 
-###Clone the repository
+### Clone the repository
 
-```git clone https://github.com/nehoraipenia-commits/AI.git
+```
+git clone https://github.com/nehoraipenia-commits/AI.git
 cd AI
 ```
 
