@@ -70,7 +70,7 @@ An advanced, lightweight hybrid generative intelligence system built natively wi
 
 ### Clone the repository
 
-```
+```bash
 git clone https://github.com/nehoraipenia-commits/AI.git
 cd AI
 ```
@@ -84,25 +84,25 @@ source venv/bin/activate
 
 ## On Windows
 
-```
+```powershell
 python -m venv venv
 venv\Scripts\activate
 ```
 
 ### Install required dependencies
 
-```
+```bash
 pip install torch numpy scikit-learn requests
 ```
  or 
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
 ### Launch the Assistant CLI
 
-```
+```bash
 python3 ai_pytorch.py
 ```
 
