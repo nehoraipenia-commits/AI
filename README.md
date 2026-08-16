@@ -79,8 +79,12 @@ cd AI
 ### Create and activate a virtual environment (Recommended)
 
 ## On macOS/Linux
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
+```
+
 
 ## On Windows
 
