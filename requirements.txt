@@ -1,2 +1,5 @@
-streamlit
 ollama 
+torch
+numpy
+scikit-learn
+requests
