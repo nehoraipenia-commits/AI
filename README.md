@@ -198,4 +198,4 @@ For more informations : https://nexeo-ai.netlify.app/
 
 # Versions
 
-<a hreff=https://github.com/nehoraipenia-commits/AI/blob/main/read/readme.md>Lien<a>
+<a href=https://github.com/nehoraipenia-commits/AI/blob/main/read/readme.md>Lien<a>
