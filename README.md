@@ -60,7 +60,7 @@ An advanced, lightweight hybrid generative intelligence system built natively wi
 
 - Before installing, make sure you have the following software installed on your machine:
 
-- Python: Version 3.8 or higher
+- Python: Version 3.1 or higher
 
 - PyTorch: Version 1.12.0 or higher (CUDA/MPS support optional but recommended)
 
