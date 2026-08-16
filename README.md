@@ -101,7 +101,7 @@ pip install torch numpy scikit-learn requests
 python3 ai_pytorch.py
 ```
 
-Interactive CLI Commands
+## Interactive CLI Commands
 
 Once the CLI is running (AI-CLI >>>), you can enter standard text prompts or utilize system control commands:
 
