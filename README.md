@@ -195,3 +195,5 @@ AI/
 ```
 
 For more informations : https://nexeo-ai.netlify.app/
+
+# Versions
