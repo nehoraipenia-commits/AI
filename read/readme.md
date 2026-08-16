@@ -49,9 +49,9 @@ Un système avancé, léger et hybride d'intelligence générative, développé 
                                                 |
                                                 v
   +----------------------------+    +-----------+-------------+   +----------------------------+
-  | Module de reconstruction   |<--| Moteur de sampling      |-->| LLM Ollama local         |
-  | française                  |   | intelligent              |   | (Boucles de warmup        |
-  | (Correction grammaticale)  |   | (Top-K/Nucleus Sampling) |   | coopératives)             |
+  | Module de reconstruction   |<-- | Moteur de sampling      |--> | LLM Ollama local          |
+  | française                  |    | intelligent                  | (Boucles de warmup        |
+  | (Correction grammaticale)  |    | (Top-K/Nucleus Sampling) |   | coopératives)             |
   +----------------------------+    +-----------+-------------+   +----------------------------+
                                                 |
                                                 v
