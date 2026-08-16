@@ -94,6 +94,11 @@ venv\Scripts\activate
 ```
 pip install torch numpy scikit-learn requests
 ```
+ or 
+
+```
+pip install -r requirements.txt
+```
 
 ### Launch the Assistant CLI
 
