@@ -65,7 +65,7 @@ Un système avancé, léger et hybride d'intelligence générative, développé 
 
 * Avant l'installation, assurez-vous que les logiciels suivants sont installés sur votre machine :
 
-* Python : Version 3.8 ou supérieure
+* Python : Version 3.1 ou supérieure
 
 * PyTorch : Version 1.12.0 ou supérieure (support CUDA/MPS optionnel mais recommandé)
 
