@@ -198,7 +198,7 @@ For more informations : https://nexeo-ai.netlify.app/
 
 # Versions
 
-<a href=https://github.com/nehoraipenia-commits/AI/edit/main/README.md>English<a>
+<a href=https://github.com/nehoraipenia-commits/AI/blob/main/README.md>English<a>
 
 <a href=https://github.com/nehoraipenia-commits/AI/blob/main/read/readme.md>Français<a>
 
