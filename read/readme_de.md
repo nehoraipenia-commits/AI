@@ -63,7 +63,7 @@ Ein fortschrittliches, leichtgewichtiges und hybrides System für generative Int
 
 * Stellen Sie vor der Installation sicher, dass die folgende Software auf Ihrem Rechner installiert ist:
 
-* Python: Version 3.8 oder höher
+* Python: Version 3.1 oder höher
 
 * PyTorch: Version 1.12.0 oder höher (CUDA/MPS-Unterstützung optional, aber empfohlen)
 
