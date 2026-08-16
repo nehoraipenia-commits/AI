@@ -1,129 +1,194 @@
-# IA - Noyau génératif neuronal et cadre sémantique
+# AI - Neural Generative Core & Semantic Framework
 
-Un système d'intelligence générative hybride avancé et léger, conçu nativement avec PyTorch. Ce cadre combine une architecture de transformateur causal personnalisée avec l'encodage par paires d'octets (BPE), la recherche vectorielle sémantique (RAG), la reconstruction de phrases françaises (FSR), le suivi dynamique des profils utilisateurs et l'ajustement coopératif hors ligne du modèle linéaire de base (LLM) via des instances locales d'Ollama.
+Un système avancé, léger et hybride d'intelligence générative, développé nativement avec PyTorch. Le framework combine une architecture Transformer causale personnalisée avec le Byte-Pair Encoding (BPE), la recherche vectorielle sémantique (RAG), la reconstruction de phrases françaises (FSR), le suivi dynamique du profil utilisateur et le fine-tuning coopératif hors ligne de LLM locaux via des instances Ollama.
 
-## Fonctionnalités clés
+### Fonctionnalités principales
 
-- Moteur de transformateur causal personnalisé : Entièrement conçu à partir de zéro avec les primitives PyTorch, il intègre l'encodage positionnel sinusoïdal, l'auto-attention causale multi-têtes et la normalisation des couches.
+* Moteur Transformer causal personnalisé : Entièrement développé à partir des primitives PyTorch, avec encodages positionnels sinusoïdaux, attention causale multi-têtes et normalisation des couches.
 
-- Tokenisation par encodage par paires d'octets (BPE) : Pipeline de tokenisation de sous-mots personnalisé avec mise à l'échelle dynamique du vocabulaire et normalisation complète Unicode/accent.
+* Tokenisation Byte-Pair Encoding (BPE) : Pipeline personnalisé de tokenisation par sous-mots avec mise à l'échelle dynamique du vocabulaire et normalisation complète de l'Unicode et des accents.
 
-- Mémoire sémantique multi-fichiers (RAG) : Stockage vectoriel de similarité TF-IDF et cosinus capable d'indexer les bases de code Python (.py) et la documentation (.txt) pour une génération contextuelle.
+* Mémoire sémantique multi-fichiers (RAG) : Magasin vectoriel basé sur TF-IDF et la similarité cosinus, capable d'indexer des bases de code Python (.py) et de la documentation (.txt) pour une génération prenant en compte le contexte.
 
-- Intégration d'Ollama et ajustement dynamique : Cadre multi-modèles coopératif qui exploite les extensions de connaissances des LLM locaux (par exemple, Gemma, Llama) pour entraîner dynamiquement hors ligne les poids PyTorch personnalisés.
+* Intégration Ollama & fine-tuning dynamique : Framework multi-modèles coopératif qui récupère des extensions de connaissances auprès de LLM locaux (par exemple Gemma, Llama) afin d'entraîner dynamiquement les poids PyTorch personnalisés hors ligne.
 
-- Reconstruction de phrases françaises (FSR) : Module neuronal Seq2Seq dédié au débruitage, à la correction des contractions françaises, des erreurs de syntaxe et des fautes de frappe.
+* Reconstruction de phrases françaises (FSR) : Module neuronal Seq2Seq dédié à la correction des contractions françaises, des erreurs syntaxiques et des fautes de frappe.
 
-- Moteur de mémoire utilisateur dynamique et de profils : Extraction en temps réel des informations utilisateur (nom, préférences, contexte) conservées au fil des sessions de chat.
+* Mémoire utilisateur dynamique & moteur de profil : Extraction en temps réel des informations utilisateur (nom, préférences, contexte), maintenues à travers des sessions de discussion successives.
 
-- Interface CLI interactive : Interface terminal riche en fonctionnalités avec analyses d'exécution en direct et gestion de l'état du modèle.
+* Interface CLI interactive : Interface terminal complète avec analyses d'exécution en temps réel et gestion de l'état du modèle.
 
-- Architecture système
+* Architecture du système
 
-```
+```text
                                   +---------------------------+
-                                  |    User Input / Prompt    |
+                                  |    Entrée utilisateur /   |
+                                  |          Prompt           |
                                   +-------------+-------------+
                                                 |
                                                 v
    +----------------------------+   +-----------+-----------+   +----------------------------+
-   | Dynamic User Memory Core   |-->| Semantic Memory (RAG) |<--| Indexed Directory Files    |
-   | (Facts & History Context)  |   | (TF-IDF Vector Store) |   | (.py code & .txt docs)     |
+   | Mémoire utilisateur        |-->| Mémoire sémantique    |<--| Fichiers du répertoire    |
+   | dynamique                  |   | (RAG)                 |   | indexés (.py & .txt)      |
+   | (faits & historique)       |   | (Magasin TF-IDF)      |   |                            |
    +----------------------------+   +-----------+-----------+   +----------------------------+
                                                 |
                                                 v
                                  +--------------+--------------+
-                                 | Byte-Pair Encoding (BPE)    |
-                                 | Tokenizer Pipeline          |
+                                 | Tokenisation Byte-Pair     |
+                                 | Encoding (BPE)              |
+                                 | Pipeline                    |
                                  +--------------+--------------+
                                                 |
                                                 v
                                  +--------------+--------------+
-                                 | Custom Causal Transformer   |
-                                 | (Multi-Head Self-Attention) |
+                                 | Transformer causal         |
+                                 | personnalisé               |
+                                 | (Attention multi-têtes)    |
                                  +--------------+--------------+
                                                 |
                                                 v
   +----------------------------+    +-----------+-------------+   +----------------------------+
-  | French Reconstruction Module|<--| Smart Sampler Engine    |-->| Ollama Local LLM           |
-  | (FSR Grammar Correction)    |   | (Top-K/Nucleus Sampling)|   | (Cooperative Warmup Loops) |
+  | Module de reconstruction   |<--| Moteur de sampling      |-->| LLM Ollama local         |
+  | française                  |   | intelligent              |   | (Boucles de warmup        |
+  | (Correction grammaticale)  |   | (Top-K/Nucleus Sampling) |   | coopératives)             |
   +----------------------------+    +-----------+-------------+   +----------------------------+
                                                 |
                                                 v
                                   +-------------+-------------+
-                                  |  Generated AI Response    |
+                                  |  Réponse générée par      |
+                                  |           l'IA             |
                                   +---------------------------+
-
-
 ```
 
 ## Prérequis
 
-- Avant l'installation, assurez-vous d'avoir installé les logiciels suivants sur votre machine :
+* Avant l'installation, assurez-vous que les logiciels suivants sont installés sur votre machine :
 
-- Python : Version 3.8 ou supérieure
+* Python : Version 3.8 ou supérieure
 
-- PyTorch : Version 1.12.0 ou supérieure (prise en charge CUDA/MPS optionnelle mais recommandée)
+* PyTorch : Version 1.12.0 ou supérieure (support CUDA/MPS optionnel mais recommandé)
 
-- Ollama (optionnel) : Requis uniquement si vous souhaitez effectuer un réglage fin LLM coopératif en local.
+* Ollama (Optionnel) : Nécessaire uniquement si vous souhaitez utiliser le fine-tuning coopératif avec des LLM locaux.
 
-Installation et configuration
+* Installation & configuration
 
 ### Cloner le dépôt
 
-```
+```bash
 git clone https://github.com/nehoraipenia-commits/AI.git
 cd AI
 ```
 
-### Créer et activer un environnement virtuel (recommandé)
+### Créer et activer un environnement virtuel (Recommandé)
 
-## Sous macOS/Linux
+## Sur macOS/Linux
 
+```bash
 python3 -m venv venv
 source venv/bin/activate
-
-## Sous Windows
-
 ```
+
+## Sur Windows
+
+```bash
 python -m venv venv
 venv\Scripts\activate
 ```
 
 ### Installer les dépendances requises
 
-```
+```bash
 pip install torch numpy scikit-learn requests
 ```
 
-### Lancer l'interface de ligne de commande de l'assistant
+### Lancer l'interface CLI de l'assistant
 
-```
+```bash
 python3 ai_pytorch.py
 ```
 
-## Commandes interactives de l'interface de ligne de commande
+## Commandes de l'interface CLI interactive
 
-Une fois l'interface de ligne de commande lancée (AI-CLI >>>), vous pouvez saisir des invites de texte standard ou utiliser les commandes de contrôle système :
+Une fois le CLI lancé (`AI-CLI >>>`), vous pouvez entrer des prompts textuels standards ou utiliser les commandes de contrôle du système :
 
 Commande
 
 Description
 
-```
+```text
 /status
 ```
 
-Afficher le matériel Spécifications, allocation des ressources, taille du vocabulaire BPE actif et état des fichiers de base en mémoire.
+Affiche les caractéristiques matérielles, l'allocation du périphérique, la taille du vocabulaire BPE actif et l'état du fichier de base mémoire.
 
-```
+```text
 /train <epochs>
 ```
 
-Réoptimisez les poids du Transformer directement dans votre code source local et votre documentation.
+Réoptimise les poids du Transformer directement à partir de votre base de code et de votre documentation locales.
 
-```
+```text
 /model <name>
 ```
 
-Changez le modèle Ollama local actif.
+Change l'identifiant du modèle Ollama local actif (par exemple, `/model gemma2:2b` ou `/model llama3`).
+
+```text
+/gemma <count>
+```
+
+Lance des boucles de génération coopérative avec Ollama afin d'étendre la base de connaissances locale et de réentraîner le modèle.
+
+```text
+/train_fsr <ep>
+```
+
+Entraîne le module Transformer de reconstruction de phrases françaises sur les textes locaux.
+
+```text
+/reconstruct <text>
+```
+
+Corrige les formulations françaises corrompues, les fautes de frappe ou les contractions à l'aide du modèle FSR.
+
+```text
+/save
+```
+
+Exporte manuellement les checkpoints et les poids actuels du système sur le disque (`checkpoints/`).
+
+```text
+/load
+```
+
+Recharge les états sauvegardés du système et les vocabulaires du tokenizer à partir des fichiers de checkpoint.
+
+```text
+/clear
+```
+
+Efface l'écran de l'interface terminal.
+
+```text
+/exit
+```
+
+Arrête proprement les processus et sauvegarde les poids actuels.
+
+## Structure du dépôt
+
+```text
+AI/
+├── AI.py                            # Contrôleur principal du pipeline système & CLI interactive
+├── AdvancedPhraseReformulator.py    # Moteur de reformulation grammaticale basé sur les POS
+├── ai_generation_helper.py          # Échantillonnage intelligent des logits, moteur de Markov & optimisation du texte
+├── FrenchContractionHandler.py      # Règles de contraction française & reconstruction Seq2Seq
+├── dynamic_user_memory.py           # Extracteur dynamique de faits utilisateur & gestion de l'historique
+├── nlp_tokenization_suite.py        # Suite de tokenisation Byte-Pair Encoding (BPE)
+├── big_book.txt                     # Corpus principal du système & base de connaissances
+├── ollama_responses.txt             # Journal des extensions générées par les LLM coopératifs
+└── checkpoints/                     # Répertoire de sérialisation des poids du modèle
+```
+
+Pour plus d'informations : https://nexeo-ai.netlify.app/
